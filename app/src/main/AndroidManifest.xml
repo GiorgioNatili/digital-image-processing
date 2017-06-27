@@ -62,6 +62,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="co.zaven.digitalimageprocessing.activities.ProcessingOptionsActivity" />
         </activity>
+        <activity
+            android:name=".activities.HoughTransformActivity"
+            android:label="@string/title_activity_hough_transform"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

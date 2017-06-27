@@ -7,6 +7,7 @@
     <string name="histogram">histogram</string>
     <string name="detect_edges">detect edges</string>
     <string name="detect_light">detect light</string>
+    <string name="hough_transform">hough transform</string>
     <string name="choose_option">Choose option</string>
     <string name="title_activity_histogram">Histogram</string>
     <string name="title_activity_detect_edges">Detect edges</string>
@@ -14,4 +15,5 @@
     <string name="request_permission_rationale" type="id">We need read image from your gallery.</string>
     <string name="ok">ok</string>
     <string name="sample_image">Sample image</string>
+    <string name="title_activity_hough_transform">HoughTransformActivity</string>
 </resources>

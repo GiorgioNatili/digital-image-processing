@@ -1,10 +1,8 @@
 package co.zaven.digitalimageprocessing.activities;
 
 import android.content.ContentResolver;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
@@ -23,21 +21,22 @@ public class ProcessingOptionsActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_processing_options);
         ButterKnife.bind(this);
         ActivityHelper.setupToolbar(this, toolbar);
 
         Uri uri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE + "://" +
-                getResources().getResourcePackageName(R.drawable.sun_mountain) + '/' +
-                getResources().getResourceTypeName(R.drawable.sun_mountain) + '/' +
-                getResources().getResourceEntryName(R.drawable.sun_mountain) );
+                getResources().getResourcePackageName(R.drawable.original_road) + '/' +
+                getResources().getResourceTypeName(R.drawable.original_road) + '/' +
+                getResources().getResourceEntryName(R.drawable.original_road) );
 
         bundle = new Bundle();
         bundle.putParcelable(KEY_BITMAP, uri);
     }
 
-    @OnClick({R.id.histogram, R.id.edges, R.id.light})
+    @OnClick({R.id.histogram, R.id.edges, R.id.light, R.id.hough})
     void onClick(View view) {
         switch (view.getId()) {
             case R.id.histogram:
@@ -48,6 +47,9 @@ public class ProcessingOptionsActivity extends BaseActivity {
                 break;
             case R.id.light:
                 ActivityHelper.startActivity(this, DetectLightActivity.class, bundle);
+                break;
+            case R.id.hough:
+                ActivityHelper.startActivity(this, HoughTransformActivity.class, bundle);
                 break;
         }
     }

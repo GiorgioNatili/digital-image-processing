@@ -44,6 +44,7 @@ public class DetectEdgesActivity extends BaseActivity {
     }
 
     private void detectEdges(Bitmap bitmap) {
+
         Mat rgba = new Mat();
         Utils.bitmapToMat(bitmap, rgba);
 
