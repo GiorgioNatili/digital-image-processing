@@ -59,7 +59,7 @@ public class HoughTransformActivity extends BaseActivity {
 
         Mat edges = new Mat(rgba.size(), CvType.CV_8UC1);
         Imgproc.cvtColor(rgba, edges, Imgproc.COLOR_RGB2GRAY, 4);
-        Imgproc.Canny(edges, edges, 80, 100);
+        Imgproc.Canny(edges, edges, 70, 100);
 
         // Don't do that at home or work it's for visualization purpose.
         BitmapHelper.showBitmap(this, bitmap, originalImage);
@@ -85,9 +85,9 @@ public class HoughTransformActivity extends BaseActivity {
 
         Imgproc.Canny(mat, edges, 50, 90);
 
-        int threshold = 20;
-        int minLineSize = 20;
-        int lineGap = 10;
+        int threshold = 70;
+        int minLineSize = 38;
+        int lineGap = 5;
 
         Imgproc.HoughLinesP(edges, lines, 1, Math.PI / 180, threshold, minLineSize, lineGap);
 
@@ -105,9 +105,7 @@ public class HoughTransformActivity extends BaseActivity {
         }
 
         Bitmap bmp = Bitmap.createBitmap(rgba.cols(), rgba.rows(), Bitmap.Config.ARGB_8888);
-
         Utils.matToBitmap(rgba, bmp);
-        bitmap = bmp;
 
         // Don't do that at home or work it's for visualization purpose.
         Bitmap resultBitmap = Bitmap.createBitmap(rgba.cols(), rgba.rows(), Bitmap.Config.ARGB_8888);
