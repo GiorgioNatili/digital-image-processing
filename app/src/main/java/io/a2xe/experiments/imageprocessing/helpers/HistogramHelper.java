@@ -1,4 +1,4 @@
-package co.zaven.digitalimageprocessing.helpers;
+package io.a2xe.experiments.imageprocessing.helpers;
 
 import android.util.Log;
 import android.util.SparseArray;

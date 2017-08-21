@@ -1,4 +1,4 @@
-package co.zaven.digitalimageprocessing.activities;
+package io.a2xe.experiments.imageprocessing.activities;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -13,9 +13,9 @@ import org.opencv.imgproc.Imgproc;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import co.zaven.digitalimageprocessing.R;
-import co.zaven.digitalimageprocessing.helpers.ActivityHelper;
-import co.zaven.digitalimageprocessing.helpers.BitmapHelper;
+import io.a2xe.experiments.imageprocessing.R;
+import io.a2xe.experiments.imageprocessing.helpers.ActivityHelper;
+import io.a2xe.experiments.imageprocessing.helpers.BitmapHelper;
 
 public class DetectEdgesActivity extends BaseActivity {
 

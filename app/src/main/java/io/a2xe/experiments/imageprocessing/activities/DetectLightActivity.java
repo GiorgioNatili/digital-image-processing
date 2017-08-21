@@ -1,4 +1,4 @@
-package co.zaven.digitalimageprocessing.activities;
+package io.a2xe.experiments.imageprocessing.activities;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -21,9 +21,10 @@ import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import co.zaven.digitalimageprocessing.R;
-import co.zaven.digitalimageprocessing.helpers.ActivityHelper;
-import co.zaven.digitalimageprocessing.helpers.BitmapHelper;
+import io.a2xe.experiments.imageprocessing.R;
+import io.a2xe.experiments.imageprocessing.helpers.ActivityHelper;
+import io.a2xe.experiments.imageprocessing.helpers.BitmapHelper;
+
 
 public class DetectLightActivity extends BaseActivity {
 

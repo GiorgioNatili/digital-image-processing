@@ -1,4 +1,4 @@
-package co.zaven.digitalimageprocessing.activities;
+package io.a2xe.experiments.imageprocessing.activities;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -20,8 +20,8 @@ import org.opencv.android.OpenCVLoader;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import co.zaven.digitalimageprocessing.R;
-import co.zaven.digitalimageprocessing.helpers.ActivityHelper;
+import io.a2xe.experiments.imageprocessing.R;
+import io.a2xe.experiments.imageprocessing.helpers.ActivityHelper;
 
 public class DipActivity extends BaseActivity {
 

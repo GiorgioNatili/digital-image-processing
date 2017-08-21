@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.zaven.digitalimageprocessing">
+    package="io.a2xe.experiments.imageprocessing">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -30,7 +30,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="co.zaven.digitalimageprocessing.activities.DipActivity" />
+                android:value=".activities.DipActivity" />
         </activity>
         <activity
             android:name=".activities.HistogramActivity"
@@ -40,7 +40,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="co.zaven.digitalimageprocessing.activities.ProcessingOptionsActivity" />
+                android:value=".activities.ProcessingOptionsActivity" />
         </activity>
         <activity
             android:name=".activities.DetectEdgesActivity"
@@ -50,7 +50,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="co.zaven.digitalimageprocessing.activities.ProcessingOptionsActivity" />
+                android:value=".activities.ProcessingOptionsActivity" />
         </activity>
         <activity
             android:name=".activities.DetectLightActivity"
@@ -60,7 +60,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="co.zaven.digitalimageprocessing.activities.ProcessingOptionsActivity" />
+                android:value=".activities.ProcessingOptionsActivity" />
         </activity>
         <activity
             android:name=".activities.HoughTransformActivity"

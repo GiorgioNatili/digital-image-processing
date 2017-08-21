@@ -1,4 +1,4 @@
-package co.zaven.digitalimageprocessing.activities;
+package io.a2xe.experiments.imageprocessing.activities;
 
 import android.Manifest;
 import android.support.v7.app.AppCompatActivity;

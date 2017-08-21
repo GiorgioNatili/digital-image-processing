@@ -1,4 +1,4 @@
-package co.zaven.digitalimageprocessing;
+package io.a2xe.experiments.imageprocessing;
 
 import org.junit.Test;
 

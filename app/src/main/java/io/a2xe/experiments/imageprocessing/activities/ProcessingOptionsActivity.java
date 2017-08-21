@@ -1,4 +1,4 @@
-package co.zaven.digitalimageprocessing.activities;
+package io.a2xe.experiments.imageprocessing.activities;
 
 import android.content.ContentResolver;
 import android.net.Uri;
@@ -9,8 +9,9 @@ import android.view.View;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import co.zaven.digitalimageprocessing.R;
-import co.zaven.digitalimageprocessing.helpers.ActivityHelper;
+
+import io.a2xe.experiments.imageprocessing.R;
+import io.a2xe.experiments.imageprocessing.helpers.ActivityHelper;
 
 public class ProcessingOptionsActivity extends BaseActivity {
 

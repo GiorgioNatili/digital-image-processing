@@ -1,4 +1,4 @@
-package co.zaven.digitalimageprocessing.activities;
+package io.a2xe.experiments.imageprocessing.activities;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -15,9 +15,10 @@ import org.opencv.imgproc.Imgproc;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import co.zaven.digitalimageprocessing.R;
-import co.zaven.digitalimageprocessing.helpers.ActivityHelper;
-import co.zaven.digitalimageprocessing.helpers.BitmapHelper;
+import io.a2xe.experiments.imageprocessing.R;
+import io.a2xe.experiments.imageprocessing.helpers.ActivityHelper;
+import io.a2xe.experiments.imageprocessing.helpers.BitmapHelper;
+
 
 public class HoughTransformActivity extends BaseActivity {
 
@@ -85,9 +86,9 @@ public class HoughTransformActivity extends BaseActivity {
 
         Imgproc.Canny(mat, edges, 50, 90);
 
-        int threshold = 70;
+        int threshold = 20;
         int minLineSize = 38;
-        int lineGap = 5;
+        int lineGap = 30;
 
         Imgproc.HoughLinesP(edges, lines, 1, Math.PI / 180, threshold, minLineSize, lineGap);
 
