@@ -53,7 +53,6 @@ public class DipActivity extends BaseActivity {
         requestPermission();
 
         Glide.with(this).load(R.drawable.original_road).into(sampleImage);
-
     }
 
     @OnClick(R.id.select_option)

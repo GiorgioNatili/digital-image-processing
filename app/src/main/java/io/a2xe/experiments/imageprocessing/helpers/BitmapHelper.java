@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -45,6 +46,21 @@ public class BitmapHelper {
         if (stream != null) {
             stream.close();
         }
+        return bitmap;
+    }
+
+    public static Bitmap readBitmapFromImageView(ImageView imageView) /*throws Exception */{
+
+        imageView.setDrawingCacheEnabled(true);
+        imageView.measure(View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED),
+                View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
+        imageView.layout(0, 0,imageView.getMeasuredWidth(), imageView.getMeasuredHeight());
+
+        imageView.buildDrawingCache(true);
+
+        Bitmap bitmap = Bitmap.createBitmap(imageView.getDrawingCache());
+        imageView.setDrawingCacheEnabled(false);
+
         return bitmap;
     }
 
